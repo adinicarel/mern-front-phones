@@ -1,0 +1,47 @@
+.form_page {
+    text-align: center;
+}
+
+.form_page_title {
+    padding: 2rem;
+}
+
+form{
+    width: 50%;
+    margin: 10px auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+form>div {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+form input {
+    font-size: 1.15rem;
+    padding: 4px 8px;
+    max-width: 200px;
+}
+
+form button {
+    margin: 5px auto 25px;
+    max-width: 100px;
+    padding: 8px 30px;
+    background-color: rgba(44, 44, 44, 0.85);
+    color: white;
+    font-size: 1.1rem;
+}
+
+/**RESPONSIVE*/
+@media screen and (max-width:768px) {
+    form {
+        width: 80%;
+    }
+    
+}

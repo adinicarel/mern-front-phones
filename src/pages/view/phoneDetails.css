@@ -1,0 +1,21 @@
+.back_link_wrapper {
+    margin-top:3rem;
+    margin-bottom: 3rem;
+}
+
+.back_link {
+    background-color: rgb(36, 33, 33);
+    font-size: 1.1rem;
+    color:white;
+    padding:10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease-in;
+}
+
+.back_link:hover {
+    color: rgb(36, 33, 33);
+    background-color:greenyellow;
+    font-weight: 600;
+}

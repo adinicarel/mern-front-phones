@@ -1,0 +1,32 @@
+/** BACK LINK*/
+
+main {
+    text-align: center;
+}
+
+main>div {
+    margin-bottom: 3.5rem;
+}
+.link_back {
+    text-decoration: none;
+    text-align: center;
+}
+    
+.link_back_text {
+font-size: 1.1rem;
+background-color: rgb(158, 158, 158);
+padding: 8px 15px;
+color: rgb(255, 255, 255);
+border-radius: 6px;
+border: 1px solid darkred;
+}
+
+.success_message {
+    text-align: center;
+    visibility: hidden;
+    font-size: 1.2rem;
+    padding: 4px;
+    font-weight: 700;
+    color: green;
+    margin-bottom: 1rem;
+}

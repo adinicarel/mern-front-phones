@@ -1,4 +1,16 @@
 # Getting Started with Create React App
+This project is the client-side part of a ful stack demo application that uses a MongoDB database and NodeJS with express to connect to this DB.
+
+The React application uses React Router DOM to set up routes to the different pages.
+
+The pages are supposed to enable the user do the following actions:
+1. Read data from DB, 
+2. read one particular item from DB, 
+3. add data to the DB,
+4. update data for an item in the DB,
+5. lastly to delete an item
+
+...so, actually an integrated CRUD application that provides functions on the client side and sends the data to the server to consequently do the same actions on the DB.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

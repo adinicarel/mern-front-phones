@@ -1,0 +1,25 @@
+header {
+    background-color: rgb(49, 49, 49);
+}
+.main_nav {
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    gap:100px;
+    align-items: center;
+}
+
+.main_nav li {
+    list-style-type: none;
+}
+
+.add_link {
+    text-decoration: none;
+    font-size: 1.12rem;
+    background-color:rgb(38, 190, 38);
+    padding: 7px 15px;
+    color: white;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+
+}

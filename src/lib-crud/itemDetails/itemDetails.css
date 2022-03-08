@@ -1,0 +1,194 @@
+.details_page>.wrapper {
+    display: grid;
+    gap:40px;
+}
+.article {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 35% auto 25%;
+    gap:2.5%;
+    width: 70%;
+    color: white;
+}
+
+.manufacturer_title {
+    margin: 50px 0 0 25px;
+    text-align: left;
+}
+
+.phone_title_2 {
+    margin-top: 0;
+    font-size: 2.2rem;
+}
+
+.article ul {
+    margin: 0 0 45px;
+}
+
+.article ul>li {
+    margin-bottom: 11px;
+    text-align: start;
+    font-weight: 500;
+}
+.color_btn_disabled{
+    padding: 12px 14px;
+    border-radius: 5px;
+    border: 1px solid rgba(204, 204, 204,0.6);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin: 0 10px 10px 0;
+    position: relative;
+}
+
+.color_btn_disabled::before{
+    content: 'NA';
+    top: -12px;
+    left:10px;
+    display:none;
+    position:absolute;
+}
+
+.color_btn_disabled>.color_circle {
+    width: 18px;
+    height:18px;
+    border-radius: 50%;
+    border: 1px solid #e2e2e2;
+    line-height: 18px;
+}
+.color_btn_disabled:not(.available):hover {
+    color:#6b6b6b;
+    background-color: rgb(83, 83, 83);
+}
+
+.color_btn_disabled:not(.available):hover::before{
+    display: block;
+}
+
+.available {
+    border: 2px solid darkgreen;
+}
+
+.silver{
+    background-color: silver;
+}
+
+.white{
+    background-color: white;
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.black {
+    background-color: black;
+}
+
+/** RIGHT SECTION : PRICE AND OFFERS*/
+.price_section{
+    display: grid;
+    grid-template-rows: auto 35%;
+}
+
+.price_section>div {
+    border: 2px solid darkgreen;
+    border-radius: 10px;
+    padding: 10%;
+    background-color: white;
+}
+
+.price_section>div>p{
+    color: rgb(83, 83, 83);
+}
+.price_section>div>p>strong {
+    color: rgb(1, 1, 93);
+}
+
+.price_section h3{
+    color: rgb(1, 1, 93);
+}
+.price_section h3>span {
+    font-size:0.95rem;
+    color:rgb(83, 83, 83);
+    font-weight: 400;
+}
+
+.price_section button {
+    background-color: rgba(44, 44, 44, 0.85);
+    color: white;
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin: 20px;
+    text-align: center;
+}
+
+.price_section .offer {
+    background-color: aquamarine;
+    color:darkblue;
+    padding:10%;
+    height: fit-content;
+    border-radius: 10px;
+    font-size: 0.95rem;
+}
+
+.offer:hover {
+    background-color: white;
+    color:darkslategrey;
+}
+
+/** LINK AT THE BOTTOM OF PAGE*/
+.edit_link {
+    margin-top: 45px;
+    padding-bottom: 35px;
+}
+.link_update_page {
+    background-color: white;
+    color:rgb(36, 33, 33);
+    text-decoration: none;
+    padding:10px 15px;
+    border-radius: 6px;
+    transition: all 0.2s ease-in;
+}
+
+.link_update_page:hover {
+    background-color: rgb(36, 33, 33);
+    color:white;
+}
+
+
+@media screen and (max-width:1180px) {
+    .article {
+        grid-template-columns: 1fr;
+        gap:2.5%;
+        width: 80%;
+    }
+    .price_section{
+        width: 50%;
+        margin: 5px auto;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    .article {
+        grid-template-columns: 1fr;
+        gap:2.5%;
+        width: 90%;
+    }
+    .article ul>li {
+        text-align: center;
+        list-style-type: none;
+    }
+
+    .price_section{
+        width: 65%;
+        margin: 5px auto;
+    }
+    
+}

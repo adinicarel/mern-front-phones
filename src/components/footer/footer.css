@@ -1,0 +1,14 @@
+footer {
+    width:100%;
+    display:inline-flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+    background-color: #ccc;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 10px;
+    color: inherit;
+}

@@ -1,0 +1,72 @@
+.main_page *{
+    text-align: center;
+}
+
+.phones_list {
+    margin: 40px auto;
+    max-width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 25px;
+}
+
+.phone_article {
+    border:1px solid #ccc;
+    border-radius: 6px;
+    padding: 15px 0 4px;
+    position: relative;
+}
+
+.article_price{
+    border: 1px solid transparent;
+    background-color: #52DB8D;
+    padding: 7px 0;
+    margin-bottom: -5px;
+    border-radius:6px;
+}
+
+.article_delete_btn {
+    font-size: 1.2rem;
+    font-weight: 500;
+    position:absolute;
+    top: 0;
+    right:0;
+    border:1px solid #d8d8d8;
+    border-radius:5px;
+    color:#52DB8D;
+    padding:4px 8px;
+    transition: all 0.2s ease-out;
+}
+
+.article_delete_btn:hover {
+    color:red;
+    border: #5d5d5d;
+    background-color: white;
+    padding:6px 10px;
+    font-weight: 700;
+}
+
+@media screen and (max-width:1200px) {
+    .phones_list {
+        margin: 35px auto;
+        max-width: 88vw;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 23px;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    .phones_list {
+        margin: 35px auto;
+        max-width: 75vw;
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+    img {
+        max-width: 300px;
+    }
+    
+}
+
