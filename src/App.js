@@ -29,7 +29,7 @@ function App() {
   useEffect(() => {    
     fetchData();
     return () => abortController.abort();
-  },[fetchData])
+  },[])
   
   const handleDeleteItem = (id) => async (e) => {
     const response = await fetch(`https://mern-server-phones.herokuapp.com/api/phones/${id}`, {
